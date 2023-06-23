@@ -7,4 +7,4 @@ s.connect(('localhost',5001))
 while 1:
 	sys.stdout.write('>> ')
 	line = sys.stdin.readline()
-	s.send('CMD ' + line)
+	s.send(f'CMD {line}')
